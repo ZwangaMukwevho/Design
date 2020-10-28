@@ -39,3 +39,9 @@ This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypack
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+* Install
+python3 -m pip install --user --upgrade pip
+python3 -m pip install --user virtualenv
+
+
