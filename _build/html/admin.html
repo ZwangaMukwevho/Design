@@ -189,6 +189,30 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="admin.admin.checkAdmin">
+<code class="descname">checkAdmin</code><span class="sig-paren">(</span><em>password</em><span class="sig-paren">)</span><a class="headerlink" href="#admin.admin.checkAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that checks if a user is an admin</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>username</strong> (<em>string</em>) – The username the user uses to log in</li>
+<li><strong>password</strong> (<em>string</em>) – The password the user uses to log in</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Returns true if the user is an admin</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Returns false if the user is not an admin</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="admin.admin.checkPassword">
 <code class="descname">checkPassword</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#admin.admin.checkPassword" title="Permalink to this definition">¶</a></dt>
 <dd><p>[Takes in a username and returns the corresponding password to the username]</p>
@@ -209,14 +233,50 @@
 <dl class="method">
 <dt id="admin.admin.createUser">
 <code class="descname">createUser</code><span class="sig-paren">(</span><em>name</em>, <em>password</em><span class="sig-paren">)</span><a class="headerlink" href="#admin.admin.createUser" title="Permalink to this definition">¶</a></dt>
-<dd><p>[Writes the name and password of the user in a textfile in a newline]</p>
+<dd><p>Writes the name and password of the user in a textfile in a newline</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>name</strong> (<em>[</em><em>string</em><em>]</em>) – [This is the name the user will use to login.]</li>
-<li><strong>password</strong> (<em>[</em><em>string</em><em>]</em>) – [This is the password the user uses to sign in]</li>
+<li><strong>name</strong> (<em>string</em>) – This is the name the user will use to login.</li>
+<li><strong>password</strong> (<em>string</em>) – This is the password the user uses to sign in</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="admin.admin.deleteUser">
+<code class="descname">deleteUser</code><span class="sig-paren">(</span><em>password</em><span class="sig-paren">)</span><a class="headerlink" href="#admin.admin.deleteUser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Functions that deletes a registered user from the list of registered users</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> (<em>string</em>) – The username the individual uses to log in</li>
+<li><strong>password</strong> (<em>String</em>) – The password the user uses to log in</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="admin.admin.makeAdmin">
+<code class="descname">makeAdmin</code><span class="sig-paren">(</span><em>password</em><span class="sig-paren">)</span><a class="headerlink" href="#admin.admin.makeAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that takes the username and password of a user and makes them an admin</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> (<em>string</em>) – The username the individual will uses to login</li>
+<li><strong>password</strong> (<em>string</em>) – The password the individual uses to login</li>
 </ul>
 </td>
 </tr>

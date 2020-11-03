@@ -95,7 +95,7 @@ class fileManager:
 	def donwloadFile(self,URL,fName,fType):
 			
 		
-		if type(fname) is str and type(fType) is str:
+		if type(fName) is str and type(fType) is str:
 			outName = fName + "." + fType
 			subprocess.run(["curl","-O",URL])
 			#subprocess.run(["mv",outName,"/media/usb/files"])
@@ -113,7 +113,7 @@ class fileManager:
 		:param outName: [This is the name of the file that the individual is downloading.]
 		:type outName: [string]
 		"""
-
+		print("this is the outName "+outName)
 		if type(username) is str and type(password) is str and type(outName) is str:
 			authToken = username+":"+password
 			subprocess.run(["curl","-u",authToken,"-O",URL])
@@ -131,7 +131,7 @@ class fileManager:
 
 		if type(fName) is not str:
 			return ""
-		searchName = fName + "*"
+		searchName = fName 
 		#out = subprocess.Popen(["find","/media/usb/files","-name", searchName],stdout=subprocess.PIPE)
 		out = subprocess.Popen(["find","/home/pi/files","-name", searchName],stdout=subprocess.PIPE)
 
