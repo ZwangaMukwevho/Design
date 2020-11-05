@@ -24,7 +24,7 @@ t that deals with creating an API for an IoT system that allows wireless file tr
 
 
 * Free software: MIT license
-* Documentation: https://Design.readthedocs.io.
+* Documentation: https://word-coint.readthedocs.io/en/latest/modules.html
 
 
 Features
