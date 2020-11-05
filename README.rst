@@ -54,7 +54,7 @@ Install
     sudo apt-get install samba samba-common-bin
     sudo apt install ntfs-3g
 
-## Activate your virtual Environment and install requirements
+ Activate your virtual Environment and install requirements
 -------------------------------------------------------------
 
 ::
@@ -94,7 +94,7 @@ Mount USB to microntroller
 
 */mnt/usb will be the directory of you usb on the PI*
 
-## Setting up samba server
+ Setting up samba server
 --------------------------
 
 -  Create a directory called files in your USB
